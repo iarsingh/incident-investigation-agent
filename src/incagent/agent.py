@@ -1,5 +1,5 @@
 TOOLS = ["read_logs", "read_deploys", "hypothesize"]
-WRITES = ("confirm root cause", "page", "restart",)
+WRITES = ("confirm root cause", "page everyone", "kubectl delete")
 
 
 class InputError(ValueError):
