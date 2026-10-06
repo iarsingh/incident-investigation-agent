@@ -52,14 +52,14 @@ These checked-in guides provide the project’s detailed design, operational con
 | --- | --- | --- |
 | `GET /healthz` | `healthz` | [`src/incagent/main.py`](src/incagent/main.py#L10) |
 | `POST /agent/run` | `post_run` | [`src/incagent/main.py`](src/incagent/main.py#L15) |
-| `GET /readyz` | `readyz` | [`src/incagent/ops.py`](src/incagent/ops.py#L44) |
-| `POST /workspaces` | `create_workspace` | [`src/incagent/ops.py`](src/incagent/ops.py#L49) |
-| `GET /workspaces` | `list_workspaces` | [`src/incagent/ops.py`](src/incagent/ops.py#L66) |
-| `POST /workspaces/{workspace_id}/jobs` | `create_job` | [`src/incagent/ops.py`](src/incagent/ops.py#L73) |
-| `GET /jobs/{job_id}` | `get_job` | [`src/incagent/ops.py`](src/incagent/ops.py#L96) |
-| `POST /jobs/{job_id}/approve` | `approve_job` | [`src/incagent/ops.py`](src/incagent/ops.py#L105) |
-| `GET /audit` | `audit` | [`src/incagent/ops.py`](src/incagent/ops.py#L122) |
-| `GET /metrics` | `metrics` | [`src/incagent/ops.py`](src/incagent/ops.py#L138) |
+| `GET /readyz` | `readyz` | [`src/incagent/ops.py`](src/incagent/ops.py#L74) |
+| `POST /workspaces` | `create_workspace` | [`src/incagent/ops.py`](src/incagent/ops.py#L80) |
+| `GET /workspaces` | `list_workspaces` | [`src/incagent/ops.py`](src/incagent/ops.py#L98) |
+| `POST /workspaces/{workspace_id}/jobs` | `create_job` | [`src/incagent/ops.py`](src/incagent/ops.py#L106) |
+| `GET /jobs/{job_id}` | `get_job` | [`src/incagent/ops.py`](src/incagent/ops.py#L130) |
+| `POST /jobs/{job_id}/approve` | `approve_job` | [`src/incagent/ops.py`](src/incagent/ops.py#L140) |
+| `GET /audit` | `audit` | [`src/incagent/ops.py`](src/incagent/ops.py#L160) |
+| `GET /metrics` | `metrics` | [`src/incagent/ops.py`](src/incagent/ops.py#L176) |
 
 The table lists literal route decorators found in the inspected Python modules. Router prefixes and middleware can add behavior; check the linked handler and application setup before calling an endpoint.
 
