@@ -1,5 +1,12 @@
 # Incident Investigation Agent
 
+## Overview
+
+A beginner agentic AI exercise that reads posted incident signals and names a likely memory or deploy hypothesis through `POST /agent/run`. It stops at a hypothesis: a goal that asks it to confirm a root cause is refused, leaving that decision to a person. A versioned `/v1` ops API adds workspaces, tenant isolation, job approval and audit, and the service ships with a Dockerfile, a docker-compose file and a pytest suite run in GitHub Actions.
+
+- **Built with:** Python, pytest, Docker, GitHub Actions
+- **Scope:** Local laptop lab; it does not call a hosted model and does not apply production changes.
+
 <!-- project-guide:start -->
 ## Project guide
 
